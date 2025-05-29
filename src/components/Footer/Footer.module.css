@@ -1,0 +1,69 @@
+.footer {
+  width: 100%;
+}
+.container{
+  width: 1200px;
+  box-sizing: border-box;
+  margin: auto;
+  border-top: 1px solid #ddd;
+  margin-top: 35px;
+  padding: 0px 21px;
+}
+.title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.keywords {
+  display: flex;
+  justify-content:space-evenly ;
+  font-weight: bold;
+  font-size: 15.5px;
+  cursor: pointer;
+  transition: translates 0.2s ease;
+}
+.keywords a {
+  display:grid;
+  grid-template-areas: 
+  "footer1 footer2 footer3 footer4 footer5 footer6";
+  box-sizing: border-box;
+  padding: 10.5px;
+  color: white;
+  border-radius: 10px;
+  width: 162.5px;
+  height: 78.21px;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  
+}
+
+.key1{
+  box-sizing: border-box;
+  background-color: blue;
+  justify-content: center;
+}
+.key2{
+  box-sizing: border-box;
+  background-color: green;
+}
+.key3{
+  box-sizing: border-box;
+  background-color: orange;
+}
+.key4{
+  box-sizing: border-box;
+  background-color: blueviolet;
+}
+.key5{
+  box-sizing: border-box;
+  background-color: gray;
+}
+.key6{
+  box-sizing: border-box;
+  background-color: red;
+}
+
+.keywordButton:hover {
+  transform: translateY(-2px);
+}

@@ -1,0 +1,116 @@
+/* Wrapper cho toàn bộ bố cục */
+.layoutGrid {
+  padding: 21px 0px 35px ;
+  width: 100%;
+}
+/* Lưới chính */
+.sidebarCell {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-areas: 
+  "sidebar main main content1"
+  "sidebar main main content2"
+  "itemt1 itemt2 itemt3 itemt4";
+} 
+/* Các khối bên trong */
+.sidebar {
+  /* display: flex; */
+  width: 233.38px;
+  height: 316.19px;
+  grid-area: sidebar;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10.5px;
+}
+.sidebar ul{
+  list-style: none;
+  /* display: flex; */
+  flex-direction: column;
+  padding-left: 0px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.sidebar li{
+  box-sizing: border-box;
+  /* justify-items: center; */
+}
+.sidebar icon{
+  font-size: 15.5px;
+}
+
+.mainBannerCell{
+  display: flex;
+  box-sizing: border-box;
+  max-width: 640.38px;
+  max-height: 316.19px;
+  grid-area: main;
+  padding: 10.5px;
+}
+
+.rightTop1{
+  display: flex;
+  box-sizing: border-box;
+  grid-area: content1;
+  width: 284.25px;
+  height: 147.6px;
+  padding: 10.5px;
+}
+
+.rightTop2{
+  display: flex;
+  box-sizing: border-box;
+  grid-area: content2;
+  width: 284.25px;
+  height: 147.6px;
+  padding: 10.5px;
+  
+}
+
+.bottom0{
+  display: flex;
+  box-sizing: border-box;
+  grid-area: itemt1;
+  width: 284.25px;
+  height: 147.6px;
+  padding: 10.5px;
+
+}
+
+
+.bottom1{
+  display: flex;
+  box-sizing: border-box;
+   grid-area: itemt2;
+   width: 284.25px;
+   height: 147.6px;
+   padding: 10.5px;
+
+}
+
+.bottom2{
+  display: flex;
+  box-sizing: border-box;
+  grid-area: itemt3;
+  width: 284.25px;
+  height: 147.6px;
+  padding: 10.5px;
+
+}
+
+.bottom3{
+  display: flex;
+  box-sizing: border-box;
+  grid-area: itemt4;
+  width: 284.25px;
+  height: 147.6px;
+  padding: 10.5px;
+
+
+}
+img{
+  border-radius: 10px;
+}
+
+
+

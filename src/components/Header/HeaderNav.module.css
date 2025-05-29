@@ -1,0 +1,29 @@
+.navButton {
+  border: none;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-content: center;
+  background-color: transparent;
+  color: #ddd;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  /* justify-items: center; */
+}
+
+.navButton:hover {
+  color: #FFFFFF; /* sáng lên khi hover */
+}
+
+.left {
+  padding: 0px;
+  /* justify-items: center; */
+  /* Có thể thêm căn chỉnh nếu cần */
+}
+
+.right {
+  padding: 0px;
+  /* Có thể thêm căn chỉnh nếu cần */
+}

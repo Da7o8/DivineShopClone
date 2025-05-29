@@ -1,0 +1,31 @@
+.overlayLeft,
+.overlayRight {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.overlayLeft:hover,
+.overlayRight:hover {
+  opacity: 1;
+}
+
+.overlayLeft {
+  left: 0;
+}
+
+.overlayRight {
+  right: 0;
+}
+
+.arrow {
+  font-size: 28px;
+  color: white;
+  user-select: none;
+}
