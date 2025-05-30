@@ -10,56 +10,101 @@
   display: grid;
   grid-template-areas: 
   "sidebar main main content1"
-  "sidebar main main content2"
-  "itemt1 itemt2 itemt3 itemt4";
+  "sidebar main main content2";
+  grid-template-columns: 233.38px 1.25fr 1.25fr 1fr;
+  /* grid-template-rows: auto auto auto; */
 } 
 /* Các khối bên trong */
 .sidebar {
   /* display: flex; */
   width: 233.38px;
-  height: 316.19px;
+  height: 337.2px;
   grid-area: sidebar;
   box-sizing: border-box;
+  /* display: flex; */
+  
   border-radius: 8px;
   padding: 10.5px;
 }
 .sidebar ul{
   list-style: none;
-  /* display: flex; */
-  flex-direction: column;
-  padding-left: 0px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-.sidebar li{
   box-sizing: border-box;
-  /* justify-items: center; */
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 7px;
+  margin: 0px;
+  
 }
-.sidebar icon{
+li{
+  /* width: 217.78px; */
+  height: 30.06px;
+  box-sizing: border-box;
+  padding: 0px 7px;
+  display: flex;
+  align-items: center;
+}
+.icon{
+  /* box-sizing: border-box; */
   font-size: 15.5px;
+  width: 21px;
+  height: 17.5px;
+  margin-right: 7px;
 }
 
-.mainBannerCell{
-  display: flex;
-  box-sizing: border-box;
-  max-width: 640.38px;
-  max-height: 316.19px;
+/* Banner quảng cáo  */
+.containerMainAds{
   grid-area: main;
+  /* box-sizing: border-box; */
   padding: 10.5px;
+  width: 640.38px;
+  height: 315.69px;
+  border-radius: 8px;
+  /* display: flex; */
 }
+
+.sliderWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.sliderTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .rightTop1{
   display: flex;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   grid-area: content1;
   width: 284.25px;
   height: 147.6px;
   padding: 10.5px;
 }
+img{
+  border-radius: 8px;
+}
 
 .rightTop2{
   display: flex;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   grid-area: content2;
   width: 284.25px;
   height: 147.6px;
@@ -67,50 +112,24 @@
   
 }
 
-.bottom0{
+.BottomBannerRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* width: 100%; */
+}
+
+.bannerItem {
   display: flex;
-  box-sizing: border-box;
-  grid-area: itemt1;
-  width: 284.25px;
-  height: 147.6px;
+  /* justify-content: center; */
+  /* align-items: center; */
   padding: 10.5px;
-
 }
 
-
-.bottom1{
-  display: flex;
-  box-sizing: border-box;
-   grid-area: itemt2;
-   width: 284.25px;
-   height: 147.6px;
-   padding: 10.5px;
-
-}
-
-.bottom2{
-  display: flex;
-  box-sizing: border-box;
-  grid-area: itemt3;
-  width: 284.25px;
+.bannerItem img {
+  max-width: 284.25px;
   height: 147.6px;
-  padding: 10.5px;
-
-}
-
-.bottom3{
-  display: flex;
-  box-sizing: border-box;
-  grid-area: itemt4;
-  width: 284.25px;
-  height: 147.6px;
-  padding: 10.5px;
-
-
-}
-img{
+  object-fit: cover;
   border-radius: 10px;
 }
-
 
 
